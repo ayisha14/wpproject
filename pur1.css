@@ -1,0 +1,120 @@
+*{
+margin=0px;
+padding=0px;
+}
+
+.menu{
+	width:100%;
+	height:-11px;
+}
+
+.text{
+	margin-top:70px;
+	text-transform:uppercase;
+	text-align:center;
+	color:black;
+}
+.text h1{
+	font-family:Century Gothic;
+	font-size:80px;
+	margin:14px 0px;
+}
+.text1 {
+	text-align:left; 
+  font-family:'VanCondensedPro', sans-serif ;
+  font-size:30px;
+  padding-top:10px;
+  color:black;
+}
+
+.container1
+{
+	width:1320px;
+	height:800px;
+	background:rgb(204,153,255);
+	margin:40px auto 0;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.container1 .box
+{
+	position:relative;
+	width:310px;
+	height:380px;
+	background:rgb(204,153,255);
+	margin:10px;
+	box-sizing: border-box;
+	display:inline-block;	
+}
+.container1 .box .imgbox
+{
+	position:center;
+}
+.container1 .box .imgbox img
+{
+	max-width:290px;
+	padding-left:8px;
+	padding-top:8px;
+	height:250px;
+	transition:transform 1s;
+}
+.container1 .box .imgbox img:hover {
+  width:400px;
+  height:400px;
+}
+.container1 .box .imgbox .product-heading
+{
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+.container1 .box .imgbox .product-heading h1{
+	font-family:'open sans';
+	font-size:25px;
+	text-align:center;
+	margin:0px;
+	color:#4c0099;
+	padding:10px 1px;
+	text-transform:uppercase;
+	font-weight:700;
+}
+.price{
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+
+ .price p
+{
+	font-family:'open sans';
+	font-size:30px;
+	text-align:center;
+	margin:0px;
+	color:#000;
+	line-height:1;
+	font-weight:700;
+}
+.button{
+	padding:2px 2px;
+	background:#ff007f;
+	margin:auto;
+	position:absolute;
+	float:center;
+	left:45%
+
+	
+}
+.btn p{
+	font-family:'open sans';
+	font-size:20px;
+	text-align:center;
+	margin:0px;
+	color:#fff;
+	font-weight:500;
+	display:block;
+}
+
+	
+	
+

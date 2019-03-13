@@ -1,0 +1,124 @@
+
+<html> 
+<head>
+<script> 
+function validate()                                    
+{ 
+    var paymenttype = document.forms["RegForm1"]["Paymenttype"];               
+    var cardnumber = document.forms["RegForm1"]["CardNumber"];    
+    var cardholdername = document.forms["RegForm1"]["CardholderName"];  
+    var expirydate =  document.forms["RegForm1"]["ExpiryDate"];  
+    var cvv = document.forms["RegForm1"]["CVV"];    
+   
+    if (paymenttype.SelectedIndex <1)                                  
+    { 
+        alert("Please select the payment type."); 
+        paymenttype.focus(); 
+        return false; 
+    } 
+
+    if (cardnumber.value == "")                                   
+    { 
+        window.alert("Please enter the card number."); 
+        cardnumber.focus(); 
+        return false; 
+    } 
+   
+    if (cardholdername.value == "")
+    { 
+        window.alert("Please enter the name as given in card."); 
+        cardholdername.focus(); 
+        return false; 
+    } 
+   
+    if (expirydate.value == "")                 
+    { 
+        window.alert("Please enter the expiry date."); 
+        expirydate.focus(); 
+        return false; 
+    } 
+   
+    if (cvv.value == "")                        
+    { 
+        window.alert("Please enter the cvv number"); 
+        cvv.focus(); 
+        return flase; 
+    } 
+   return true; 
+}</script> 
+<style> 
+.bg
+{
+background-color:rgb(204,153,255)
+}
+validate 
+{   margin-left: 70px; 
+    font-weight: bold ; 
+    float: left; 
+    clear: left; 
+    width: 100px; 
+    text-align: left; 
+    margin-right: 10px; 
+    font-family:Times New Roman,bold, Arial, Helvetica; 
+    font-size:14px; 
+} 
+div 
+{   box-sizing: border-box; 
+    width: 100%; 
+    border: 100px solid black; 
+    float: left; 
+    align-content: center; 
+    align-items: center; 
+} 
+form 
+{   margin: 0 auto; 
+    width: 600px; 
+}
+audio
+{	position:absolute;
+	top:20%;
+	left:10%;
+}
+a:link, a:visited{
+background-color:white;
+color:black;
+position:absolute;
+top:60%;
+left:45%;
+padding:14px 25px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+}
+a:hover, a:active{
+background-color:red;
+}
+</style></head> 
+<body class="bg"> 
+<h1 style="text-align: center"> Please fill this form to pay </h1>     
+<form name="RegForm1" action="" onsubmit="return validate()" method="post">  
+<pre>
+    Select your paymenttype
+    <select type="text" value="" name="Paymenttype"> 
+			<option>Debit Card</option> 
+              </select><br>
+    Debit Card:
+    <select type="text" value="" name="Cebitcard" >
+		<option>VISA</option>
+		<option>RUPAY</option>
+		<option>MASTERCARD</option>
+		<option>MASTERO</option>
+		</select><br>
+    Card Number<span style="color:red">*</span>:
+    <input type="text" size=65 name="CardNumber"><br>
+    CardHolder Name<span style="color:red">*</span>:
+    <input type="text" size=65 name="CardholderName"><br>
+    Expiry Date<span style="color:red">*</span>:
+    <input type="date" size=65 name="ExpiryDate"><br>  
+    CVV: <span style="color:red">*</span>
+    <input type="text" size=65 name="CVV"><br>  
+   <a href="submit.html"><input type="submit" value="submit" name=""></a>
+</form> 
+
+</body> 
+</html> 
